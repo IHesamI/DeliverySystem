@@ -7,7 +7,8 @@ const ShoppingCard = ({ shoppitems }) => {
         <>
             {shoppitems.length == 0 ?
                 <>
-                    <IconButton>
+                    <IconButton
+                    >
                         <Shopping />
                     </IconButton>
 
@@ -19,10 +20,8 @@ const ShoppingCard = ({ shoppitems }) => {
                         style={{ direction: 'rtl' }}
                     >
                         <Box className={'shoppingcircle'}
-                        // style={{ backgroundColor: 'rgb(245,85,45)', borderRadius: '100%' }}
                         >
                            {shoppitems.length}
-
                         </Box>
 
                         <IconButton>

@@ -1,9 +1,15 @@
 body{
   margin: 0;
-
 }
+.Header{
+  background-color: #f6ff66;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0px 2px 1px -1px rgba(255, 21, 21, 0.274), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+}
+
 .shoppingcircle{
-  background-color: rgb(245, 85, 45);
+  background-color: rgb(32, 73, 255);
   border-radius: 100%;
   position: absolute;
   width: 36px;
@@ -12,5 +18,4 @@ body{
   align-items: center;
   display: flex;
   color: white;
-
 }

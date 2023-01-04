@@ -1,5 +1,5 @@
 import React from 'react';
-import mainIcon from '../assets/MainIcon.jpg';
+import mainIcon from '../assets/MainIcon.png';
 import { Box, Paper, InputBase, Stack, IconButton, Typography } from '@mui/material';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import PermIdentityIcon from '@mui/icons-material/PermIdentity';
@@ -13,6 +13,7 @@ import { ReactComponent as Gem } from '../assets/gem.svg';
 const TopHeader = () => {
     return (
         <Stack
+            className={'Header'}
             direction={'row'}
             style={{ alignItems: 'center', justifyContent: 'space-between' }}
         >
@@ -20,6 +21,8 @@ const TopHeader = () => {
                 component={'img'}
                 src={mainIcon}
                 style={{ width: '75px' }}
+                sx={{ pl: '10px' }}
+
             />
 
             <Stack
@@ -42,15 +45,15 @@ const TopHeader = () => {
 
 
             <Paper
-                style={{ height: 'max-content', borderRadius: '70px' }}
-                sx={{ px: 1.5, py: 0.05 }}
+                style={{ height: 'max-content', borderRadius: '70px' ,boxShadow:"none"}}
+                sx={{ pl: 1.5,pr:0.5, py: 0.05 }}
                 component={'form'}>
                 <InputBase
                     style={{ width: '500px' }}
                     placeholder={'Search...'}
                 />
                 <IconButton
-                    sx={{ p: 0.5 }}
+                    sx={{ px: 0,py:0.5 }}
                     size={'large'}
                     color={'primary'} >
                     <CheckCircleIcon
@@ -70,19 +73,19 @@ const TopHeader = () => {
                     </Typography>
                 </Stack>
                 <Stack
-                 sx={{ px: 1 }}>
+                    sx={{ px: 1 }}>
                     <IconButton
+                        color={'primary'}
                         sx={{ p: 0 }}
-                        style={{ color: 'rgba(0,0,0,1)' }}>
+                    >
 
                         <LanguageIcon
                             style={{ fontSize: '40px' }} />
                     </IconButton>
                     <Typography
                         textAlign={'center'}
-                    // color={'#9450E0'}
-                    >
-                        en
+                        color={'primary'}
+                    >en
                     </Typography>
                 </Stack>
 
