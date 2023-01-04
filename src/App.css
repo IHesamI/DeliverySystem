@@ -1,0 +1,12 @@
+.shoppingcircle{
+  background-color: rgb(245, 85, 45);
+  border-radius: 100%;
+  position: absolute;
+  width: 36px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: white;
+
+}
