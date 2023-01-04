@@ -1,3 +1,7 @@
+body{
+  margin: 0;
+
+}
 .shoppingcircle{
   background-color: rgb(245, 85, 45);
   border-radius: 100%;

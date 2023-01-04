@@ -25,7 +25,7 @@ const TopHeader = () => {
             <Stack
                 direction={'row'}
                 style={{ alignItems: 'center' }}
-                gap={15}>
+                gap={9}>
 
                 <ShoppingCard
                     shoppitems={[1, 1, 2]} />
@@ -46,7 +46,7 @@ const TopHeader = () => {
                 sx={{ px: 1.5, py: 0.05 }}
                 component={'form'}>
                 <InputBase
-                    style={{ width: '300px' }}
+                    style={{ width: '500px' }}
                     placeholder={'Search...'}
                 />
                 <IconButton
@@ -69,7 +69,8 @@ const TopHeader = () => {
                         123
                     </Typography>
                 </Stack>
-                <Stack>
+                <Stack
+                 sx={{ px: 1 }}>
                     <IconButton
                         sx={{ p: 0 }}
                         style={{ color: 'rgba(0,0,0,1)' }}>
